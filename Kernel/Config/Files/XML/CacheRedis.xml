@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_config version="2.0" init="Config">
-    <Setting Name="Cache::Redis###Server" Required="1" Valid="1">
+    <Setting Name="Cache::Redis###ServerTCP" Required="0" Valid="1">
         <Description Translatable="1">Redis server address. Example: 127.0.0.1:6379.</Description>
         <Navigation>Core::Cache</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="">127.0.0.1:6379</Item>
+        </Value>
+    </Setting>
+    <Setting Name="Cache::Redis###ServerSocket" Required="0" Valid="1">
+        <Description Translatable="1">Redis socket path. Example: /var/run/redis/redis-server.sock</Description>
+        <Navigation>Core::Cache</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="">/var/run/redis/redis-server.sock</Item>
         </Value>
     </Setting>
     <Setting Name="Cache::Redis###DatabaseNumber" Required="1" Valid="1">
