@@ -1,0 +1,12 @@
+-l=140      # max line length
+-bl         # opening brace on new line
+-sbl        # opening sub brace on new line
+-asbl       # opening anonymous sub brace on new line
+-i=4        # Indent level is 4 cols
+-ci=4       # Continuation indent is 4 cols
+-pt=0       # parentheses tightness
+-sbt=1      # square brackets tightness
+-bbt=0      # block brace tightness
+-sfs        # space for semicolon
+-blbs=2     # blank lines before subs
+-mbl=2      # maximum consecutive blank lines
