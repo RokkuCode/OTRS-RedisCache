@@ -246,7 +246,7 @@ sub _Connect
     return if !$Loaded;
 
     my $use_socket = 0;
-    if ( -e $Self->{Redis}->{Config}{Socket} )
+    if ( -e $Self->{Config}{Socket} )
     {
         $use_socket = 1;
     }
